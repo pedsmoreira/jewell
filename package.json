@@ -1,0 +1,9 @@
+{
+  "name": "jewell",
+  "version": "0.1.0",
+  "description": "Elegant objects array manipulation in Javascript",
+  "main": "index.js",
+  "repository": "https://pedsmoreira@github.com/pedsmoreira/jewell.git",
+  "author": "Pedro Moreira <pedsmoreira@gmail.com>",
+  "license": "MIT"
+}
