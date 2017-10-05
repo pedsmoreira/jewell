@@ -12,7 +12,7 @@ animals.filter.owned.map.name // 💎
 animals.filter(animal => animal.owned).map(animal => animal.name) // Tradicional
 ```
 
-**Warning**: This is an experimental package and it's not meant to be used in production.
+⚠️ **Warning**: This is an experimental package and it's not meant to be used in production.
 
 ## Installation
 
