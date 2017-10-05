@@ -5,10 +5,19 @@ We'd love to have your contribution added to Jewell. If you decide to do so, ple
 
 ## Code Style
 
-Please follow the [TSLint](https://github.com/palantir/tslint) rules on the [tslint.json](tslint.json) file.
-You can analyse your code style with `npm run lint`.
+The project uses [prettier](https://github.com/prettier/prettier). To format your code just run:
+ 
+```bash
+npm run prettier
+```
+ 
+or
+ 
+```bash
+yarn prettier
+```
 
-The linter also runs before the tests, so if your build is not passing, may be because of formatting.
+Don't worry too much about the formatting, prettier will sort things out before publishing a new version.
 
 ## Commit Messages
 
@@ -22,8 +31,8 @@ Commit messages should be verb based, such as:
 ## Testing
 
 Please update the tests to accordingly to your code changes. Pull requests will only be accepted if they are successful on
-[Travis CI](https://travis-ci.org/pedsmoreira/jewell)
-and [Code Climate](https://codeclimate.com/github/pedsmoreira/jewell). Which means the tests must pass and there must be no code quality issues.
+[Travis CI](https://travis-ci.org/pedsmoreira/jewell) and [Code Climate](https://codeclimate.com/github/pedsmoreira/jewell).
+Which means the tests must pass and there must be no code quality issues.
 
 ## Developing
 
