@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/pedsmoreira/jewell/badges/gpa.svg)](https://codeclimate.com/github/pedsmoreira/jewell)
 [![Test Coverage](https://codeclimate.com/github/pedsmoreira/jewell/badges/coverage.svg)](https://codeclimate.com/github/pedsmoreira/jewelle/coverage)
 
-Javascript Sugar for Higher-Order Messaging
+Syntax Sugar for Javascript Higher-Order Messaging
 
 ```javascript
 animals.filter.owned.map.name // 💎
