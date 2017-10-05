@@ -1,6 +1,6 @@
 {
   "name": "jewell",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Elegant objects array manipulation in Javascript",
   "main": "dist/index.js",
   "scripts": {

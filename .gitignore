@@ -1,10 +1,12 @@
+**/*.log
+
 coverage/
 dist/
 node_modules/
 test/
 typings/
 
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
-
 tsconfig.json
+
+.DS_Store
+.idea
