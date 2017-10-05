@@ -1,0 +1,9 @@
+---
+engines:
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "src/**/*.ts"
+exclude_paths:
+- dist/

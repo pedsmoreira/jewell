@@ -2,8 +2,53 @@
   "name": "jewell",
   "version": "0.1.0",
   "description": "Elegant objects array manipulation in Javascript",
-  "main": "index.js",
-  "repository": "https://pedsmoreira@github.com/pedsmoreira/jewell.git",
-  "author": "Pedro Moreira <pedsmoreira@gmail.com>",
-  "license": "MIT"
+  "main": "dist/index.js",
+  "scripts": {
+    "prettier": "prettier --no-semi --write \"{src,test}/**/*.{js,ts}\"",
+    "pretest": "npm rum prettier",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "tsc",
+    "preversion": "npm test",
+    "version": "git add package.json",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://pedsmoreira@github.com/pedsmoreira/jewell.git"
+  },
+  "keywords": [
+    "sintax",
+    "sugar",
+    "higher-order messaging",
+    "ruby"
+  ],
+  "author": "Pedro Moreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedsmoreira/jewell/issues"
+  },
+  "homepage": "https://github.com/pedsmoreira/jewell",
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "jest": "^21.0.2",
+    "jest-plugin-context": "^2.2.3",
+    "prettier": "^1.7.0",
+    "ts-jest": "^21.0.0",
+    "typescript": "^2.5.2"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "test/*/.*\\.spec.(ts|js)$",
+    "setupFiles": [
+      "jest-plugin-context/setup"
+    ]
+  }
 }
