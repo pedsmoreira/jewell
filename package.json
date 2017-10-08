@@ -1,6 +1,6 @@
 {
   "name": "jewell",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Syntax Sugar for Higher-Order Messaging",
   "main": "dist/index.js",
   "scripts": {
