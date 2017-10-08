@@ -19,15 +19,15 @@ jewellPrototype(Array);
 
 const musics = [...];
 musics.forEach.play(); // 💎
-musics.forEach(music => music.play()); // Tradicional
+musics.forEach(music => music.play()); // Traditional
 
 const animals = [...];
 animals.filter.owned.map.name; // 💎
-animals.filter(animal => animal.owned).map(animal => animal.name); // Tradicional
+animals.filter(animal => animal.owned).map(animal => animal.name); // Traditional
 
 const employees = [...];
 employees.filter.retired.forEach.sendPayment(); // 💎
-employees.filter(employee => employee.retired).forEach(employee => employee.sendPayment()); // Tradicional
+employees.filter(employee => employee.retired).forEach(employee => employee.sendPayment()); // Traditional
 ```
 
 ## Installation
@@ -50,7 +50,7 @@ Using CDN
 <script src="https://unpkg.com/jewell/dist/index.js"></script>
 ```
 
-*Note*: You may need a ES6 `Proxy` polyfill to support older browsers.
+*Note*: You may need an ES6 `Proxy` polyfill to support older browsers.
 
 ## API
 
