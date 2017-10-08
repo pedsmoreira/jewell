@@ -30,8 +30,6 @@ employees.filter.retired.forEach.sendPayment(); // 💎
 employees.filter(employee => employee.retired).forEach(employee => employee.sendPayment()); // Tradicional
 ```
 
-**⚠ Warning**: This is an experimental package and it's not meant to be used in production.
-
 ## Installation
 
 Using NPM:
@@ -58,6 +56,9 @@ Using CDN
 
 - `jewell(object: object, propertyName: string)`: Proxies function property. Bear in mind the property must already exist.
 - `jewellPrototype(class: object, except: string[])`: Proxies all functions with *zero or one argument* in a class prototype.  
+
+**⚠ Warning**: Be aware that `jewell(...)` and `jewellPrototype(...)` replace the original methods with proxies.
+So before you use it in production, make sure you're not creating unintendend behaviors.
 
 ### Jewelling a property
 
