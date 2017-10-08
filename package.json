@@ -1,7 +1,7 @@
 {
   "name": "jewell",
   "version": "0.1.1",
-  "description": "Elegant objects array manipulation in Javascript",
+  "description": "Syntax Sugar for Higher-Order Messaging",
   "main": "dist/index.js",
   "scripts": {
     "prettier": "prettier --no-semi --write \"{src,test}/**/*.{js,ts}\"",
@@ -21,7 +21,8 @@
     "sintax",
     "sugar",
     "higher-order messaging",
-    "ruby"
+    "ruby",
+    "array"
   ],
   "author": "Pedro Moreira",
   "license": "MIT",
