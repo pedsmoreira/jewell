@@ -58,7 +58,7 @@ Using CDN
 - `jewellPrototype(class: object, except: string[])`: Proxies all functions with *zero or one argument* in a class prototype.  
 
 **⚠ Warning**: Be aware that `jewell(...)` and `jewellPrototype(...)` replace the original methods with proxies.
-So before you use it in production, make sure you're not creating unintendend behaviors.
+So before you use it in production, make sure you're not creating unintendend behaviors or performance issues.
 
 ### Jewelling a property
 
