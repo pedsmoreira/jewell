@@ -58,7 +58,7 @@ Using CDN
 - `jewellPrototype(class: object, except: string[])`: Proxies all functions with *zero or one argument* in a class prototype.  
 
 **⚠ Warning**: Be aware that `jewell(...)` and `jewellPrototype(...)` replace the original methods with proxies.
-So before you use it in production, make sure you're not creating unintendend behaviors or performance issues.
+This package was created for experimental purposes, but if you decide to use it in production, make sure you're not creating unintendend behaviors or performance issues.
 
 ### Jewelling a property
 
@@ -160,6 +160,7 @@ If you have some other cool examples, you're very welcome to open a PR.
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 - The logo was created by Xicons.co and can be found [here](https://www.iconfinder.com/icons/2024653/diamond_gem_jewel_premium_value_icon).
+- Blog post about Proxy performance: https://v8project.blogspot.com.br/2017/10/optimizing-proxies.html
 
 ## Motivation
 
