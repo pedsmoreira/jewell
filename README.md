@@ -162,7 +162,10 @@ If you have some other cool examples, you're very welcome to open a PR.
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 - The logo was created by Xicons.co and can be found [here](https://www.iconfinder.com/icons/2024653/diamond_gem_jewel_premium_value_icon).
-- Blog post about Proxy performance: https://v8project.blogspot.com.br/2017/10/optimizing-proxies.html
+
+- [Blog post about Jewell](https://hackernoon.com/lets-add-some-sugar-to-javascript-with-jewell-d33d282fdee9)
+
+- [Blog post about Proxy performance](https://v8project.blogspot.com.br/2017/10/optimizing-proxies.html)
 
 ## Motivation
 
