@@ -1,8 +1,4 @@
-<img align="right" src ="./assets/logo.png" />
-
-# Jewell
-
-Javascript Syntax Sugar for Higher-Order Messaging
+# ![Jewell](./assets/logo.png)
 
 [![npm version](https://img.shields.io/npm/v/jewell.svg)](https://www.npmjs.org/package/jewell)
 [![Build Status](https://travis-ci.org/pedsmoreira/jewell.svg?branch=master)](https://travis-ci.org/pedsmoreira/jewell)
@@ -17,42 +13,34 @@ The best way to showcase Jewell is through code samples:
 import {jewellPrototype} from 'jewell';
 jewellPrototype(Array);
 
-const musics = [...];
-musics.forEach.play(); // 💎
-musics.forEach(music => music.play()); // Traditional
+const diamonds = [...];
 
-const animals = [...];
-animals.filter.owned.map.name; // 💎
-animals.filter(animal => animal.owned).map(animal => animal.name); // Traditional
+// Get price: [2k, 100k, 300k]
+diamonds.map.price; // 💎
+diamonds.map(diamond => diamond.price); // Traditional
 
-const employees = [...];
-employees.filter.retired.forEach.sendPayment(); // 💎
-employees.filter(employee => employee.retired).forEach(employee => employee.sendPayment()); // Traditional
+// Buy all pink diamonds
+diamonds.filter.pink.forEach.buy(); // 💎
+diamonds.filter(diamond => diamond.pink).forEach(diamond => diamond.buy()); // Traditional
 ```
 
-## Installation
+## Getting Started
 
-Using NPM:
+### Installation
 
 ```bash
 npm install jewell --save
 ```
 
-Using Yarn
+And to import:
 
-```bash
-yarn add jewell
-```
-
-Using CDN
-
-```bash
-<script src="https://unpkg.com/jewell/dist/index.js"></script>
+```javascript
+import jewell, {jewellPrototype} from 'jewell';
 ```
 
 *Note*: You may need an ES6 `Proxy` polyfill to support older browsers.
 
-## API
+### API
 
 - `jewell(object: object, propertyName: string)`: Proxies function property. Bear in mind the property must already exist.
 - `jewellPrototype(class: object, except: string[])`: Proxies all functions with *zero or one argument* in a class prototype.  
@@ -60,7 +48,9 @@ Using CDN
 **⚠ Warning**: Be aware that `jewell(...)` and `jewellPrototype(...)` replace the original methods with proxies.
 This package was created for experimental purposes, but if you decide to use it in production, make sure you're not creating unintendend behaviors or performance issues.
 
-### Jewelling a property
+### Jewelling an instance property
+
+This means only a single instance will be jewelled.
 
 ```javascript
 const object = [{name: 'John'}, {name: 'Jane'}];
@@ -68,6 +58,8 @@ jewell(object, 'map');
 ```
 
 ### Jewelling a prototype property
+
+This means all instances of a class will the property jewelled.
 
 ```javascript
 jewell(Array.prototype, 'map');
