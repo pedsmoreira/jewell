@@ -44,6 +44,7 @@ import jewell, {jewellPrototype} from 'jewell';
 
 - `jewell(object: object, propertyName: string)`: Proxies function property. Bear in mind the property must already exist.
 - `jewellPrototype(class: object, except: string[])`: Proxies all functions with *zero or one argument* in a class prototype.  
+- `._fn`: After proxying, the original method can be accessed through `._fn`.
 
 **⚠ Warning**: Be aware that `jewell(...)` and `jewellPrototype(...)` replace the original methods with proxies.
 This package was created for experimental purposes, but if you decide to use it in production, make sure you're not creating unintendend behaviors or performance issues.
@@ -82,7 +83,7 @@ const fruits = [{name: 'Apple'}, {name: 'Grape'}];
 fruits.map.name; // ['Apple', 'Grape']
 ```
 
-This is the same as `fruits.map(fruit => fruit.name)`.
+Equivalent to `fruits.map(fruit => fruit.name)`.
 
 ### Mapping the results of functions
 
@@ -91,19 +92,24 @@ const photos = [...];
 photos.map.crop(0, 0, 50, 50);
 ```
 
+Equivalent to `photos.map(photo => photo.crop(0, 0, 50, 50))`
+
 ### Calling function for each array item
 
 ```javascript
-const musics = [...];
-musics.forEach.play();
+const diamonds = [...];
+diamonds.forEach.sell();
 ```
+
+Equivalent to `diamonds.forEach(diamond => diamond.sell())` 
 
 ### Calling function with argument for each array item
 
 ```javascript
-const photos = [...];
-photos.forEach.crop(150, 200);
+const kittens = [...];
+kittens.forEach.feed('fish', 3);
 ```
+Equivalent to `kittens.forEach(kitten => kitten.feed('fish', 3))`
 
 ### Filtering items
 
@@ -119,12 +125,16 @@ const employees = [...];
 employees.filter.compliesTo('rule');
 ```
 
+Equivalent to `employees.filter(employee => employee.compliesTo('rule'))`
+
 ### Filtering and mapping
 
 ```javascript
 const animals = [...];
 animals.filter.friendly.map.name;
 ```
+
+Equivalent to `animals.filter(animal => animal.friendly).map(animal => animal.name)` 
 
 ### Checking if all items comply to a rule
 
@@ -133,9 +143,9 @@ const employees = [...];
 employees.every.retired; // true or false
 ```
 
-### Accessing the original method
+Equivalent to `employees.every(employee => employee.retired)`
 
-The original method is available through `_fn`
+### Accessing the original method
 
 ```javascript
 jewell(array, 'shift');
