@@ -3,9 +3,6 @@
 coverage/
 dist/
 node_modules/
-typings/
-
-tsconfig.json
 
 .DS_Store
 .idea
